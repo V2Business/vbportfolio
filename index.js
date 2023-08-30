@@ -56,6 +56,12 @@ app.post("/dataSend", async (req, res) => {
 	}
 });
 
+app.get("/", async (req, res) => {
+	res.status(200).json({
+		message: "we run bitch",
+	});
+});
+
 app.listen(3000, () => {
 	console.log("Listening on port 3000");
 });
